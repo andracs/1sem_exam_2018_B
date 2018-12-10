@@ -1,5 +1,7 @@
 # 1. semester prøve / programmering
 
+**Dato: 18. januar 8:30 - 15:45**
+
 Det er tid til at afprøve det, du lærte igennem første semester på datamatiker-uddannelsen. 
 
 Denne prøve er en milepæl, så du kan se, hvor langt du er nået. Gør dit bedste for at løse opgaverne, og være ikke bang for at løse dem forkert. 
@@ -15,6 +17,7 @@ Følgende skal afleveres i Wiseflow:
 2. Din besvarelse i et Word eller Google dokument, som via skærmbilleder og forklarende tekst viser, hvordan programmet fungerer og hvordan er den udviklet. 
 3. Et link til dit projekt på GitHub, hvor du har comittet og pushet alle dine ændringer og tilføjelser!
 
+#### OBS! Du skal committe din opgave efter hver opgave eller hver time, så vi kan  se udvikling i din kode!
 
 ## Overordnet tema: TV2.dk
 
@@ -36,7 +39,9 @@ Programmet starter i Main klassen. Modificer koden således, at den skriver "TV2
 
 Du kan også konkatenere konstanten SOFTWARE_VERSION fra Main klassen til denne velkomsthilsen.
 
-### Opgave 2 - Klasser og kodeforståelse
+Commit ændringerne.
+
+### Opgave 3 - Klasser og kodeforståelse
 Åben media mappen, og se, hvilke filer der er heri. 
 
 Åbn Main-klassen og forstå dens opbygning. Skriv  kommentarer i klassen.
@@ -45,7 +50,9 @@ Du kan også konkatenere konstanten SOFTWARE_VERSION fra Main klassen til denne 
 
 Åbn MediaID klassen, og forstå, hvordan den virker. Din opgave er at skrive kommentarer til alle linjer i denne klasse, og forklare, hvordan den virker. Brug fagsprog.
 
-### Opgave 3 - Nedarvning
+Commit ændringerne.
+
+### Opgave 4 - Nedarvning
 Opret 3 nye klasser, som skal repræsentere hhv. billede, video og artikel medietyperne. De skal alle nedarve fra Media klassen og udvide den med følgende klassevariabler:
 
 - __Video__:
@@ -65,13 +72,17 @@ Opret 3 nye klasser, som skal repræsentere hhv. billede, video og artikel medie
   - artikeltekst
   - tilhørende billede 
   
+ Commit ændringerne.
+  
 
-### Opgave - Metoder
+### Opgave 5 - Metoder
 Opret en metode ved navnet **logToConsol()** i klassen Media, som skal printe klassens "name" instansvariable  og klassens medietype (i dette tilfælde Media) til consollen.
 
 Override nu denne metode i Video, Billede og Artikel subclasses, så de skriver de respektive medietyper til konsolen i stedet for "Media".
 
-### Opgave - Array, loop og if (eller case) 
+Commit ændringerne.
+
+### Opgave 6 - Array, loop og if (eller case) 
 TV2 gemmer alle deres mediafiler i en mappe, som vi i vores udviklingsmiljø emulerer med "media" mappen i projektet.
 
 Opret en metode med navnet **logMediaFolder(String folderNavn)**, som kan vise alle filer fra "mediemappen" på stdout (consol).
@@ -82,32 +93,47 @@ Udskriv alle filers navne fra denne array/Arraylist i konsollen.
 
 Udvid din **readMediaFolder()** medtode således, at den instantierer et medie-objekt for hver indlæst mediefil. (Obs: Brug gerne de specifikke typer frem for det generiske.)
 
-### Opgave - Database
+Commit ændringerne.
+
+### Opgave 7 - Database
 Opret en database og en tabel i MySQL, som kan indeholde TV2.dk's mediedata. 
 
 Opret en metode, som kan tage et array eller ArrayList med filernes egenskaber som parameter, og som gemmer disse i en database. (Du behøver ikke at gemme alle egenskaber, bare et par stykker, der viser, at du forstår at gemme i database.)
 
 Indtast dummy mediadata, og eksporter din datbase i SQL format, og gem din eksport i projektets SQL mappe. 
 
-### Opgave - GUI
+Commit ændringerne.
+
+### Opgave 8 - GUI
 Design et GUI vha. Gluon SceneBuilder, som kan vise alle filnavne fra "media" mappen. 
 
 Tilføj funktionalitet til GUI'et, så den rent faktisk indlæser filerne fra folderen, og viser dem i GUI'et. Brug evt den metode, du tidligere har udviklet. 
+
+Commit ændringerne.
  
-### Opgave - Refactoring 
+### Opgave 9 - Refactoring 
 TV2 vil gerne have, at brugernes videoer og billeder skulle også indgå i systemet. Udvid systemet, så den kan skelne mellem bruger-genereret indhold og indhold som er lavet af TV2. (Hint: Kan du tilføje en instansvariable, som indikerer brugergenereret indhold? På hvilken klasse?)
 
 Skriv i README filen, hvordan du har løst denne opgave. 
 
-### Opgave - Test
+Commit ændringerne.
+
+### Opgave 10 - Test
 Skriv en test med navnet MediaIDTest, der tester, hvorvidt MediaID's generate() metode altid returnerer en unik, numerisk ID. 
 
+Commit ændringerne.
 
-### Opgave - Avanceret
+Commit ændringerne.
+
+### Opgave 11 - Avancerede ekstraopgave
 Hvis du har mere tid, kan du også løse følgende opgaver:
 
 Du skal udvide din applikation, så medie-data kan oprettes, rettes og slettes i databasen via GUI'et.
 
 Hvis du stadig har tid, kan du prøve at implementere medievisning i GUI for stationens billede- og videofiler. 
+
+Commit ændringerne.
  
 
+#God arbejdslyst! 
+/Steven, Anders, András 
