@@ -8,7 +8,7 @@ Det er ikke en tragedie, hvis ikke du kan løse alle opgaverne, for du har endnu
 
 Men tage dine mangler alvorligt, og lær det, du mangler. Søg evt. hjælp for hos dine undervisere, vi er her for at hjælpe dig at lære. 
 
-## Overordnet tema
+## Overordnet tema: TV2
 
 TV2 producerer adskillige tv-indslag med tilhørende billeder og artikler hver dag, og de vil gerne have udviklet et system, som kan give overblik over deres mediefiler.
 
@@ -16,7 +16,7 @@ Du skal hjælpe TV2 med at udvikle et "digital media management system", dvs. et
 
 ### Opgave 1 - Opstart
 
-Vi har forberedt noget starter-kode, som du skal arbejde med. Fork den fra **[https://github.com/andracs/1_semester_prove_2018](https://github.com/andracs/1_semester_prove_2018)**
+Vi har forberedt noget starter-kode, som du skal arbejde med. Fork den fra **[https://github.com/andracs/1sem_exam_2018_B](https://github.com/andracs/1sem_exam_2018_B)**
 
 ### Opgave 2 - Velkommen
 Programmet starter i Main klassen. Modificer koden således, at den skriver "TV2 Media Manager" i stedet for "Hello World". 
