@@ -8,11 +8,13 @@ Det er ikke en tragedie, hvis ikke du kan løse alle opgaverne, for du har endnu
 
 Men tage dine mangler alvorligt, og lær det, du mangler. Søg evt. hjælp for hos dine undervisere, vi er her for at hjælpe dig at lære. 
 
-## Overordnet tema: TV2
+## Overordnet tema: TV2.dk
 
-TV2 producerer adskillige tv-indslag med tilhørende billeder og artikler hver dag, og de vil gerne have udviklet et system, som kan give overblik over deres mediefiler.
+TV2.dk producerer adskillige tv-indslag med tilhørende billeder og artikler hver dag, og de vil gerne have udviklet et system, som kan give overblik over deres mediefiler.
 
 Du skal hjælpe TV2 med at udvikle et "digital media management system", dvs. et system, som kan holde information om billeder, videoer og nyhedsartikler, der produceres i TV2-regi.
+
+Der er noget, som alle mediefiler har til fælles, f.eks. at de skal have et navn, en dato, et filnavn og et unikt ID. Andre egenskaber er forbeholdt for de forskellige medietyper, f.eks. er det kun videoer, der har en længde i minutter (duration) 
 
 ### Opgave 1 - Opstart
 
@@ -26,10 +28,9 @@ Du kan også konkatenere konstanten SOFTWARE_VERSION fra Main klassen til denne 
 ### Opgave 2 - Klasser og kodeforståelse
 Åbn Main-klassen og forstå dens opbygning. Skriv  kommentarer i klassen.
 
-Åbn Media-klassen og forstå dens opbygning.
+Åbn Media-klassen og forstå dens opbygning.  Skriv  kommentarer i klassen.
 
 Åbn MediaID klassen, og forstå, hvordan den virker. Din opgave er at skrive kommentarer til alle linjer i denne klasse, og forklare, hvordan den virker. Brug fagsprog.
-
 
 ### Opgave 3 - Nedarvning
 Opret 3 nye klasser, som skal repræsentere hhv. billede, video og artikel medietyperne. De skal alle nedarve fra Media klassen og udvide den med følgende klassevariabler:
@@ -47,10 +48,15 @@ Opret 3 nye klasser, som skal repræsentere hhv. billede, video og artikel medie
   - fotograf (navn)
  
 - __Artikel__
-  -- forfætter (navn)
-  -- artikeltekst
-  -- tilhørende billede 
+  - forfætter (navn)
+  - artikeltekst
+  - tilhørende billede 
   
+
+### Opgave - Metoder
+Opret en metode ved navnet **logToConsol()** i klassen Media, som skal printe klassens "name" instansvariable  og klassens medietype (i dette tilfælde Media) til consollen.
+
+Override nu denne metode i Video, Billede og Artikel subclasses, så de skriver de respektive medietyper til konsolen i stedet for "Media".
 
 ### Opgave - Array, loop og if (eller case) 
 Opret en metode med navnet "readMediaFolder(String folderNavn)", som kan indlæse alle filnavne fra "/media" mappen i et array eller ArrayList. Metoden skal returnere denne array eller ArrayList, som indeholder mappens filer. 
@@ -62,50 +68,34 @@ Opret et medie-objekt for hver indlæst mediefil. (Obs: Gerne det specifikke obj
 ### Opgave - Database
 Opret en database og en tabel i MySQL, som kan indeholde mediedata. 
 
-Opret en metode, som kan tage et array eller ArrayList med filernes egenskaber som parameter, og som gemmer disse i en database. (Du behøver ikke at gemme alle egenskaber, bare et par stykker, der viser, at du forstår at gemme i database. )
+Opret en metode, som kan tage et array eller ArrayList med filernes egenskaber som parameter, og som gemmer disse i en database. (Du behøver ikke at gemme alle egenskaber, bare et par stykker, der viser, at du forstår at gemme i database.)
+
+Indtast dummy mediadata, og eksporter din datbase i SQL format, og gem din eksport i projektets SQL mappe. 
 
 ### Opgave - GUI
 Design et GUI, som kan vise alle filnavne i mappen. 
-
-Hvis du har  tid, må du gerne udvide din applikation, så medie-data kan rettes i databasen.
-
-Hvis du stadig har tid, kan implementere et preview for alle filer. 
-  
+ 
 ### Opgave - Refactoring 
 TV2 vil gerne have, at brugernes videoer og billeder skulle også indgå i systemet. Udvid systemet, så den kan skelne mellem bruger-genereret indhold og indhold som er lavet af TV2. 
 
 Skriv i README filen, hvordan du har løst denne opgave, hvad du har gjort. 
 
 ### Opgave - Test
-Skriv en test, der tester, hvorvidt MediaID's generate() metode altid returnerer en unik ID. 
+Skriv en test med navnet MediaIDTest, der tester, hvorvidt MediaID's generate() metode altid returnerer en unik, numerisk ID. 
 
 
+### Opgave - Avanceret
+Hvis du har mere tid, kan du også løse følgende opgaver:
+
+Du skal udvide din applikation, så medie-data kan oprettes, rettes og slettes i databasen via GUI'et.
+
+Hvis du stadig har tid, kan du prøve at implementere medievisning i GUI for stationens billede- og videofiler. 
+ 
 # Aflvering 
 Følgende skal afleveres i Wiseflow:
 
 1. Din projektmappe pakket som zip-fil, inklusiv kommentarer. 
-2. Et link til dit projekt på GitHub
+2. Et link til dit projekt på GitHub, hvor du har Comittet og Pushet alle dine ændringer og tilføjelser!
 3. Et dokument, der via skærmbilleder og forklarende tekst viser, hvordan programmet fungerer. 
 
 
-
-
-
-
-
-
-
-
-## Hint
-
-Prøv at løse opgaven selvstændigt, uden hjælp.  <details><summary>Hvis du har brug for hjælp, klik her.</summary>
-<p>
-
-```python
-print("hello world!")
-```
-
-</p>
-</details>
-
-https://github.com/andracs/test
