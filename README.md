@@ -10,16 +10,16 @@ Det er ikke en tragedie, hvis ikke du kan løse alle opgaverne, for du har endnu
 
 Men tage dine mangler alvorligt, og lær det, du mangler. Søg evt. hjælp for hos dine undervisere, vi er her for at hjælpe dig at lære. 
 
-# Aflvering 
+# Aflevering 
 Følgende skal afleveres i Wiseflow:
 
 1. Din IntelliJ projektmappe pakket som **zip-fil**, inklusiv kommentarer. 
-2. Din besvarelse i et Word eller Google dokument, som via skærmbilleder og forklarende tekst viser, hvordan programmet fungerer og hvordan er den udviklet. 
+2. Din besvarelse i et Word eller Google dokument, som via skærmbilleder og forklarende tekst viser, hvordan programmet fungerer og hvordan det er udviklet. 
 3. Et link til dit projekt på GitHub, hvor du har comittet og pushet alle dine ændringer og tilføjelser!
 
-#### OBS! Du skal committe din opgave efter hver opgave eller hver time, så vi kan  se udvikling i din kode!
+#### OBS! Du skal committe efter hver opgave eller hver time, så vi kan  se udvikling i din kode. Hvis du går i stå med en opgave, så fortsat med det næste, og vend tilbage senere.
 
-## Overordnet tema: TV2.dk
+# Overordnet tema: TV2.dk
 
 TV2.dk producerer adskillige tv-indslag med tilhørende billeder og artikler hver dag, og de vil gerne have udviklet et system, som kan give overblik over deres mediefiler.
 
@@ -35,25 +35,27 @@ Der er noget, som alle mediefiler har til fælles, f.eks. at de skal have et nav
 Vi har forberedt noget starter-kode, som du skal arbejde med. Fork den fra **[https://github.com/andracs/1sem_exam_2018_B](https://github.com/andracs/1sem_exam_2018_B)**
 
 ### Opgave 2 - Velkommen
-Programmet starter i Main klassen. Modificer koden således, at den skriver "TV2 Media Manager" i stedet for "Hello World". 
+Programmet starter i Main klassen. Se, om du kan køre main metoden i denne klasse. 
+
+Forstå, hvordan det virker, og modificer koden således, at den skriver "TV2 Media Manager" i stedet for "Hello World". 
 
 Du kan også konkatenere konstanten SOFTWARE_VERSION fra Main klassen til denne velkomsthilsen.
 
 Commit ændringerne.
 
 ### Opgave 3 - Klasser og kodeforståelse
-Åben media mappen, og se, hvilke filer der er heri. 
+Åben **media** mappen, og se, hvilke filer der er heri. 
 
-Åbn Main-klassen og forstå dens opbygning. Skriv  kommentarer i klassen.
+Åbn **Main** klassen og forstå dens opbygning. Skriv  kommentarer i klassen.
 
-Åbn Media-klassen og forstå dens opbygning.  Skriv  kommentarer i klassen.
+Åbn **Media** klassen og forstå dens opbygning.  Skriv  kommentarer i klassen.
 
-Åbn MediaID klassen, og forstå, hvordan den virker. Din opgave er at skrive kommentarer til alle linjer i denne klasse, og forklare, hvordan den virker. Brug fagsprog.
+Åbn **MediaID** klassen, og forstå, hvordan den virker. Din opgave er at skrive kommentarer til alle linjer i denne klasse, og forklare, hvordan den virker. Brug fagsprog.
 
 Commit ændringerne.
 
 ### Opgave 4 - Nedarvning
-Opret 3 nye klasser, som skal repræsentere hhv. billede, video og artikel medietyperne. De skal alle nedarve fra Media klassen og udvide den med følgende klassevariabler:
+Opret 3 nye klasser, som skal repræsentere hhv. billede, video og artikel medietyperne. De skal alle nedarve fra **Media** klassen og udvide den med følgende klassevariabler:
 
 - __Video__:
   - filtype (mp4, m4v, mov)
@@ -76,22 +78,22 @@ Opret 3 nye klasser, som skal repræsentere hhv. billede, video og artikel medie
   
 
 ### Opgave 5 - Metoder
-Opret en metode ved navnet **logToConsol()** i klassen Media, som skal printe klassens "name" instansvariable  og klassens medietype (i dette tilfælde Media) til consollen.
+Opret en metode ved navnet **logToConsol()** i klassen **Media**, som skal printe klassens **name** instansvariable  og klassens medietype (i dette tilfælde Media) til consollen.
 
 Override nu denne metode i Video, Billede og Artikel subclasses, så de skriver de respektive medietyper til konsolen i stedet for "Media".
 
 Commit ændringerne.
 
 ### Opgave 6 - Array, loop og if (eller case) 
-TV2 gemmer alle deres mediafiler i en mappe, som vi i vores udviklingsmiljø emulerer med "media" mappen i projektet.
+TV2 gemmer alle deres mediafiler i en mappe, som vi i vores udviklingsmiljø emulerer med **[media](https://github.com/andracs/1sem_exam_2018_B/tree/master/media)** mappen i projektet.
 
 Opret en metode med navnet **logMediaFolder(String folderNavn)**, som kan vise alle filer fra "mediemappen" på stdout (consol).
 
 Opret en anden metode med navnet **readMediaFolder(String folderNavn)**, som kan indlæse alle filnavne fra "/media" mappen i et array eller ArrayList. Metoden skal returnere dette array eller en ArrayList, som indeholder mappens filer. 
 
-Udskriv alle filers navne fra denne array/Arraylist i konsollen.
+Udskriv alle filnavne fra denne array/Arraylist i konsollen.
 
-Udvid din **readMediaFolder()** medtode således, at den instantierer et medie-objekt for hver indlæst mediefil. (Obs: Brug gerne de specifikke typer frem for det generiske.)
+Udvid din **readMediaFolder()** medtode således, at den instantierer et medie-objekt for hver indlæst mediefil. (Obs: Brug gerne de specifikke typer frem for det generiske. Brug en if- eller en case-sætning til at afgøre om det er det ene eller det andet.)
 
 Commit ændringerne.
 
@@ -100,7 +102,7 @@ Opret en database og en tabel i MySQL, som kan indeholde TV2.dk's mediedata.
 
 Opret en metode, som kan tage et array eller ArrayList med filernes egenskaber som parameter, og som gemmer disse i en database. (Du behøver ikke at gemme alle egenskaber, bare et par stykker, der viser, at du forstår at gemme i database.)
 
-Indtast dummy mediadata, og eksporter din datbase i SQL format, og gem din eksport i projektets SQL mappe. 
+Indtast dummy mediadata i tabellerne, og eksporter din database i SQL format, og gem din eksport i projektets SQL mappe. 
 
 Commit ændringerne.
 
@@ -123,8 +125,6 @@ Skriv en test med navnet MediaIDTest, der tester, hvorvidt MediaID's generate() 
 
 Commit ændringerne.
 
-Commit ændringerne.
-
 ### Opgave 11 - Avancerede ekstraopgave
 Hvis du har mere tid, kan du også løse følgende opgaver:
 
@@ -135,5 +135,5 @@ Hvis du stadig har tid, kan du prøve at implementere medievisning i GUI for sta
 Commit ændringerne.
  
 
-#God arbejdslyst! 
+# God arbejdslyst! 
 /Steven, Anders, András 
