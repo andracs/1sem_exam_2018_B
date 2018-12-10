@@ -2,7 +2,7 @@
 
 Det er tid til at afprøve det, du lærte igennem første semester på datamatiker-uddannelsen. 
 
-Denne prøve er en milepæl, så du kan se, hvor langt du er nået. 
+Denne prøve er en milepæl, så du kan se, hvor langt du er nået. Gør dit bedste for at løse opgaverne, og være ikke bang for at løse dem forkert. 
 
 Det er ikke en tragedie, hvis ikke du kan løse alle opgaverne, for du har endnu 2 år til at øve dig på bl.a. programmering.
 
