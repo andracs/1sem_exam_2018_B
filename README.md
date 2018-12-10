@@ -8,6 +8,14 @@ Det er ikke en tragedie, hvis ikke du kan løse alle opgaverne, for du har endnu
 
 Men tage dine mangler alvorligt, og lær det, du mangler. Søg evt. hjælp for hos dine undervisere, vi er her for at hjælpe dig at lære. 
 
+# Aflvering 
+Følgende skal afleveres i Wiseflow:
+
+1. Din IntelliJ projektmappe pakket som **zip-fil**, inklusiv kommentarer. 
+2. Din besvarelse i et Word eller Google dokument, som via skærmbilleder og forklarende tekst viser, hvordan programmet fungerer og hvordan er den udviklet. 
+3. Et link til dit projekt på GitHub, hvor du har comittet og pushet alle dine ændringer og tilføjelser!
+
+
 ## Overordnet tema: TV2.dk
 
 TV2.dk producerer adskillige tv-indslag med tilhørende billeder og artikler hver dag, og de vil gerne have udviklet et system, som kan give overblik over deres mediefiler.
@@ -15,6 +23,9 @@ TV2.dk producerer adskillige tv-indslag med tilhørende billeder og artikler hve
 Du skal hjælpe TV2 med at udvikle et "digital media management system", dvs. et system, som kan holde information om billeder, videoer og nyhedsartikler, der produceres i TV2-regi.
 
 Der er noget, som alle mediefiler har til fælles, f.eks. at de skal have et navn, en dato, et filnavn og et unikt ID. Andre egenskaber er forbeholdt for de forskellige medietyper, f.eks. er det kun videoer, der har en længde i minutter (duration) 
+
+![TV2 Julekalender](https://raw.githubusercontent.com/andracs/1sem_exam_2018_B/master/media/julekalender.jpg?token=AFRFt8DcAs71apBBmpv7KY-tnuBLupSBks5cF5lIwA%3D%3D)
+
 
 ### Opgave 1 - Opstart
 
@@ -26,6 +37,8 @@ Programmet starter i Main klassen. Modificer koden således, at den skriver "TV2
 Du kan også konkatenere konstanten SOFTWARE_VERSION fra Main klassen til denne velkomsthilsen.
 
 ### Opgave 2 - Klasser og kodeforståelse
+Åben media mappen, og se, hvilke filer der er heri. 
+
 Åbn Main-klassen og forstå dens opbygning. Skriv  kommentarer i klassen.
 
 Åbn Media-klassen og forstå dens opbygning.  Skriv  kommentarer i klassen.
@@ -59,26 +72,32 @@ Opret en metode ved navnet **logToConsol()** i klassen Media, som skal printe kl
 Override nu denne metode i Video, Billede og Artikel subclasses, så de skriver de respektive medietyper til konsolen i stedet for "Media".
 
 ### Opgave - Array, loop og if (eller case) 
-Opret en metode med navnet "readMediaFolder(String folderNavn)", som kan indlæse alle filnavne fra "/media" mappen i et array eller ArrayList. Metoden skal returnere denne array eller ArrayList, som indeholder mappens filer. 
+TV2 gemmer alle deres mediafiler i en mappe, som vi i vores udviklingsmiljø emulerer med "media" mappen i projektet.
 
-Udskriv alle filers navne fra mappen i konsollen.
+Opret en metode med navnet **logMediaFolder(String folderNavn)**, som kan vise alle filer fra "mediemappen" på stdout (consol).
 
-Opret et medie-objekt for hver indlæst mediefil. (Obs: Gerne det specifikke objekt frem for det generiske.)
+Opret en anden metode med navnet **readMediaFolder(String folderNavn)**, som kan indlæse alle filnavne fra "/media" mappen i et array eller ArrayList. Metoden skal returnere dette array eller en ArrayList, som indeholder mappens filer. 
+
+Udskriv alle filers navne fra denne array/Arraylist i konsollen.
+
+Udvid din **readMediaFolder()** medtode således, at den instantierer et medie-objekt for hver indlæst mediefil. (Obs: Brug gerne de specifikke typer frem for det generiske.)
 
 ### Opgave - Database
-Opret en database og en tabel i MySQL, som kan indeholde mediedata. 
+Opret en database og en tabel i MySQL, som kan indeholde TV2.dk's mediedata. 
 
 Opret en metode, som kan tage et array eller ArrayList med filernes egenskaber som parameter, og som gemmer disse i en database. (Du behøver ikke at gemme alle egenskaber, bare et par stykker, der viser, at du forstår at gemme i database.)
 
 Indtast dummy mediadata, og eksporter din datbase i SQL format, og gem din eksport i projektets SQL mappe. 
 
 ### Opgave - GUI
-Design et GUI, som kan vise alle filnavne i mappen. 
+Design et GUI vha. Gluon SceneBuilder, som kan vise alle filnavne fra "media" mappen. 
+
+Tilføj funktionalitet til GUI'et, så den rent faktisk indlæser filerne fra folderen, og viser dem i GUI'et. Brug evt den metode, du tidligere har udviklet. 
  
 ### Opgave - Refactoring 
-TV2 vil gerne have, at brugernes videoer og billeder skulle også indgå i systemet. Udvid systemet, så den kan skelne mellem bruger-genereret indhold og indhold som er lavet af TV2. 
+TV2 vil gerne have, at brugernes videoer og billeder skulle også indgå i systemet. Udvid systemet, så den kan skelne mellem bruger-genereret indhold og indhold som er lavet af TV2. (Hint: Kan du tilføje en instansvariable, som indikerer brugergenereret indhold? På hvilken klasse?)
 
-Skriv i README filen, hvordan du har løst denne opgave, hvad du har gjort. 
+Skriv i README filen, hvordan du har løst denne opgave. 
 
 ### Opgave - Test
 Skriv en test med navnet MediaIDTest, der tester, hvorvidt MediaID's generate() metode altid returnerer en unik, numerisk ID. 
@@ -91,11 +110,4 @@ Du skal udvide din applikation, så medie-data kan oprettes, rettes og slettes i
 
 Hvis du stadig har tid, kan du prøve at implementere medievisning i GUI for stationens billede- og videofiler. 
  
-# Aflvering 
-Følgende skal afleveres i Wiseflow:
-
-1. Din projektmappe pakket som zip-fil, inklusiv kommentarer. 
-2. Et link til dit projekt på GitHub, hvor du har Comittet og Pushet alle dine ændringer og tilføjelser!
-3. Et dokument, der via skærmbilleder og forklarende tekst viser, hvordan programmet fungerer. 
-
 
