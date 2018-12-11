@@ -54,6 +54,8 @@ Commit ændringerne.
 
 Åbn **MediaID** klassen, og forstå, hvordan den virker. Din opgave er at skrive kommentarer til alle linjer i denne klasse, og forklare, hvordan den virker. Brug fagsprog.
 
+Konstruer et klassediagram der dokumenterer klassernes indhold og indbyrdes relationer. Du bestemmer selv om du vil bruge Visio, draw.io eller et billede af et håndtegnet diagram. Placer klassediagrammet i dit repository så det løbende bliver inkluderet i hvert commit.
+
 Commit ændringerne.
 
 ### Opgave 4 - Nedarvning
@@ -76,6 +78,8 @@ Opret 3 nye klasser, som skal repræsentere hhv. billede, video og artikel medie
   - artikeltekst
   - tilhørende billede 
   
+ Opdater klassediagrammet så det afspejler tilføjelsen af de nye klasser.
+ 
  Commit ændringerne.
   
 
@@ -83,6 +87,8 @@ Opret 3 nye klasser, som skal repræsentere hhv. billede, video og artikel medie
 Opret en metode ved navnet **logToConsol()** i klassen **Media**, som skal printe klassens **name** instansvariable  og klassens medietype (i dette tilfælde Media) til consollen.
 
 Override nu denne metode i Video, Billede og Artikel subclasses, så de skriver de respektive medietyper til konsolen i stedet for "Media".
+
+Opdater klassediagrammet så det afspejler ændringerne i koden.
 
 Commit ændringerne.
 
@@ -97,6 +103,8 @@ Udskriv alle filnavne fra denne array/Arraylist i konsollen.
 
 Udvid din **readMediaFolder()** medtode således, at den instantierer et medie-objekt for hver indlæst mediefil. (Obs: Brug gerne de specifikke typer frem for det generiske. Brug en if- eller en case-sætning til at afgøre om det er det ene eller det andet.)
 
+Opdater klassediagrammet så det afspejler ændringerne i koden.
+
 Commit ændringerne.
 
 ### Opgave 7 - Database
@@ -105,6 +113,8 @@ Opret en database og en tabel i MySQL, som kan indeholde TV2.dk's mediedata.
 Opret en metode, som kan tage et array eller ArrayList med filernes egenskaber som parameter, og som gemmer disse i en database. (Du behøver ikke at gemme alle egenskaber, bare et par stykker, der viser, at du forstår at gemme i database.)
 
 Indtast dummy mediadata i tabellerne, og eksporter din database i SQL format, og gem din eksport i projektets SQL mappe. 
+
+Opdater klassediagrammet så det afspejler ændringerne i koden.
 
 Commit ændringerne.
 
