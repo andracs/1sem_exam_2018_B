@@ -74,7 +74,7 @@ Opret 3 nye klasser, som skal repræsentere hhv. billede, video og artikel medie
   - fotograf (navn)
  
 - __Artikel__
-  - forfætter (navn)
+  - forfatter (navn)
   - artikeltekst
   - tilhørende billede 
   
@@ -112,7 +112,7 @@ Opret en database og en tabel i MySQL, som kan indeholde TV2.dk's mediedata.
 
 Opret en metode, som kan tage et array eller ArrayList med filernes egenskaber som parameter, og som gemmer disse i en database. (Du behøver ikke at gemme alle egenskaber, bare et par stykker, der viser, at du forstår at gemme i database.)
 
-Indtast dummy mediadata i tabellerne, og eksporter din database i SQL format, og gem din eksport i projektets SQL mappe. 
+Indtast dummy mediadata i tabellerne, og eksporter din database i SQL-format, og gem din eksport i projektets SQL mappe. 
 
 Opdater klassediagrammet så det afspejler ændringerne i koden.
 
