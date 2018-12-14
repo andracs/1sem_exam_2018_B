@@ -1,6 +1,6 @@
 # 1. semester prøve / programmering
 
-**Dato: 18. januar 8:30 - 15:45**
+**Dato: 18. december 2018 8:30 - 15:45**
 
 Det er tid til at afprøve det, du lærte igennem første semester på datamatiker-uddannelsen. 
 
