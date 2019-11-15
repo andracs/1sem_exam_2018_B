@@ -19,7 +19,7 @@ Følgende skal afleveres i Wiseflow:
 
 **[Link til Wiseflow...](https://europe.wiseflow.net/manager/display.php?id=1093138)**
 
-#### OBS! Du skal committe efter hver opgave eller hver time, så vi kan  se udvikling i din kode. Hvis du går i stå med en opgave, så fortsat med det næste, og vend tilbage senere.
+#### OBS! Du skal committe efter hver opgave eller hver time, så vi kan  se udvikling i din kode. Hvis du går i stå med en opgave, så fortsat med det næste, og vend tilbage senere. Lex Simon: Du skal kun pushe til allersidst!
 
 # Overordnet tema: TV2.dk
 
